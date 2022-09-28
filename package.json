@@ -2,11 +2,13 @@
   "name": "ori-nft-marketplace-hardhat",
   "version": "0.0.1",
   "description": "ORI NFT hardhat project typescript",
-  "main": "index.js",
+  "author": "Nick Shvab",
+  "license": "MIT",
   "scripts": {
     "build": "npm run clean && npm run compile",
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
+    "deploy-hardhat": "npx hardhat run scripts/deploy.ts --network hardhat",
     "test": "npx hardhat test",
     "coverage": "npm run build && npx hardhat coverage --temp artifacts --network coverage"
   },

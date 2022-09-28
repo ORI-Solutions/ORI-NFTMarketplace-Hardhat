@@ -34,9 +34,45 @@ const config: HardhatUserConfig = {
     coverage: {
       url: "http://127.0.0.1:8555",
     },
+    hardhat: {
+      chainId: 31337,
+    },
+    // kovan: {
+    //   url: KOVAN_RPC_URL,
+    //   accounts: [KOVAN_PRIVATE_KEY],
+    //   chainId: 42,
+    // },
+    // rinkeby: {
+    //   url: RINKEBY_RPC_URL,
+    //   accounts: [RINKEBY_PRIVATE_KEY],
+    //   chainId: 4,
+    // },
+    // mumbai: {
+    //   url: MUMBAI_RPC_URL,
+    //   accounts: [process.env.PRIVATE_KEY],
+    //   chainId: 80001,
+    // },
+    // polygon: {
+    //   url: POLYGON_RPC_URL,
+    //   accounts: [process.env.PRIVATE_KEY],
+    //   chainId: 137,
+    // },
+    //   bsc_mainnet: {
+    //     url: "https://bsc-dataseed.binance.org",
+    //     chainId: 56,
+    //     gasPrice: 20000000000,
+    //     accounts: [PKEY]
+    // },
   },
+
   etherscan: {
     apiKey: ETHERSCAN_API_KEY,
+  },
+
+  namedAccounts: {
+    deployer: {
+      default: 0,
+    },
   },
 };
 
