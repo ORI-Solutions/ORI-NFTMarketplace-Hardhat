@@ -4,20 +4,20 @@
 
 Build the project
 
-    npm run build
+    yarn run build
+
+Clean the project
+
+    yarn run clean
+
+Compile the project
+
+    yarn run compile
 
 Run tests
 
-    npm test
-
-Lint solidity and typescript code
-
-    npm run lint
-
-Check file formatting
-
-    npm run lint
+    yarn test
 
 Generate code coverage
 
-    npm run coverage
+    yarn run coverage
