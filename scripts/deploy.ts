@@ -25,6 +25,13 @@ async function main() {
   const orinftCollection = await ORINFTCollection.deploy();
   await orinftCollection.deployed();
   console.log("ORINFTCollection address:", orinftCollection.address); // eslint-disable-line no-console
+
+  const ORINFTMarketplace = await ethers.getContractFactory(
+    "ORINFTMarketplace"
+  );
+  const orinftMarketplace = await ORINFTMarketplace.deploy(3);
+  await orinftMarketplace.deployed();
+  console.log("ORINFTMarketplace address:", orinftMarketplace.address); // eslint-disable-line no-console
 }
 
 main()

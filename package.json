@@ -9,6 +9,10 @@
     "clean": "npx hardhat clean",
     "compile": "npx hardhat compile",
     "deploy-hardhat": "npx hardhat run scripts/deploy.ts --network hardhat",
+    "deploy-mumbai": "npx hardhat run scripts/deploy.ts --network mumbai",
+    "deploy-polygon": "npx hardhat run scripts/deploy.ts --network polygon",
+    "deploy-bsc_testnet": "npx hardhat run scripts/deploy.ts --network bsc_testnet",
+    "deploy-bsc_mainnet": "npx hardhat run scripts/deploy.ts --network bsc_mainnet",
     "test": "npx hardhat test",
     "coverage": "npm run build && npx hardhat coverage --temp artifacts --network coverage"
   },
